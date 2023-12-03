@@ -14,4 +14,5 @@ set
   --tag-id "$3" \
   --template "$4" \
   --token "$GITHUB_TOKEN" \
+  --vcs github \
   --verbosity "$5"
