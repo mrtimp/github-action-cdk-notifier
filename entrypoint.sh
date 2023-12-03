@@ -9,7 +9,7 @@ set
   --delete "$1" \
   --log-file "$2" \
   --owner "$GITHUB_REPOSITORY_OWNER" \
-  --pull-request-id "${GITHUB_ACTION_REPOSITORY}/pull/${PULL_REQUEST_ID}" \
+  --pull-request-id "$PULL_REQUEST_ID" \
   --repo "$GITHUB_REPOSITORY" \
   --tag-id "$3" \
   --template "$4" \
