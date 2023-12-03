@@ -2,7 +2,7 @@ FROM alpine:3.18
 
 ARG VERSION=2.9.0
 ARG OS=linux
-ARG ARCH=arm64
+ARG ARCH=amd64
 
 RUN apk add curl gzip && \
 	curl --silent --location "https://github.com/karlderkaefer/cdk-notifier/releases/download/v${VERSION}/cdk-notifier_${OS}_${ARCH}.gz" -o /tmp/cdk-notifier.gz && \
