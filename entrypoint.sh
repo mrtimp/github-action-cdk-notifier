@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/sh -x
+
+set
 
 /usr/local/bin/cdk-notifier \
   --ci github \
