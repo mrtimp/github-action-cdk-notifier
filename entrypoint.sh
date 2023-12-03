@@ -6,6 +6,7 @@ set
   --ci github \
   --delete "$1" \
   --log-file "$2" \
+  --owner "$GITHUB_REPOSITORY_OWNER" \
   --repo "$GITHUB_REPOSITORY" \
   --tag-id "$3" \
   --template "$4" \
