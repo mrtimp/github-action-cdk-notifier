@@ -1,6 +1,6 @@
 #!/bin/sh -x
 
-GITHUB_REPOSITORY=$(echo "$GITHUB_REPOSITORY}" | cut -d"/" -f2)
+GITHUB_REPOSITORY=$(echo "$GITHUB_REPOSITORY" | cut -d"/" -f2)
 PULL_REQUEST_ID=$(echo "$GITHUB_REF_NAME" | cut -d"/" -f1)
 
 set
