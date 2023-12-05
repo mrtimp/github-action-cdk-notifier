@@ -26,7 +26,7 @@ RUN apk add curl gzip && \
 	apk del curl gzip
 
 #COPY --from=builder /tmp/cdk-notifier/cdk-notifier /usr/local/bin
-#
-#COPY entrypoint.sh /entrypoint.sh
+
+COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
